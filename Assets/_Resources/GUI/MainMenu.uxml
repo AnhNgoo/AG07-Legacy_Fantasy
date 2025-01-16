@@ -1,0 +1,9 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/_Resources/GUI/style.uss?fileID=7433441132597879392&amp;guid=fae7bc6f19b7cc043a92052a3e23919d&amp;type=3#style" />
+    <engine:VisualElement style="flex-grow: 1; height: 442px; width: 492px; top: 400px; position: absolute; left: 5px; align-self: auto; justify-content: center;">
+        <engine:Button text="Odyssey" name="Odyssey" class="Button-Style" style="-unity-font-style: bold; font-size: 35px; width: 251px; border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0);" />
+        <engine:Button text="Setting" name="Setting" class="Button-Style" style="width: 251px; font-size: 30px; -unity-font-style: bold;" />
+        <engine:Button text="Credits" name="Crerdits" class="Button-Style" style="font-size: 30px; -unity-font-style: bold; width: 250px;" />
+        <engine:Button text="Exit" name="Exit" class="Button-Style" style="width: 250px;" />
+    </engine:VisualElement>
+</engine:UXML>
