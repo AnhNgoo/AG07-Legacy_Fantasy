@@ -41,23 +41,35 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 2384101279
+    locked: 0
+  - name: Context
+    uniqueID: 3197279181
+    locked: 0
+  - name: Tree
+    uniqueID: 2352223785
+    locked: 0
   - name: Glass
     uniqueID: 3580290267
     locked: 0
-  - name: Backround
+  - name: Bulding
     uniqueID: 3133326339
     locked: 0
   - name: Ground
     uniqueID: 1880105643
     locked: 0
-  - name: Parttern
-    uniqueID: 1384653135
-    locked: 0
   - name: Water
     uniqueID: 2828475011
     locked: 0
+  - name: Parttern
+    uniqueID: 1384653135
+    locked: 0
   - name: Player
     uniqueID: 4201002217
+    locked: 0
+  - name: FBG
+    uniqueID: 3212549659
     locked: 0
   m_RenderingLayers:
   - Default
