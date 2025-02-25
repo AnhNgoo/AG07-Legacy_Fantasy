@@ -147,40 +147,18 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 101
-        height: 134
+        width: 143
+        height: 176
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: dfdbad6c074c67cb0800000000000000
-      internalID: -4866486358675636739
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asset 53 - 128p_1
-      rect:
-        serializedVersion: 2
-        x: 42
-        y: 42
-        width: 101
-        height: 134
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1dc54990c17bb4250800000000000000
-      internalID: 5930034665411075281
+      spriteID: 5da9548fc8f328c48a93f126af01ce5d
+      internalID: 423067303
       vertices: []
       indices: 
       edges: []
@@ -189,7 +167,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f050248b03697af4a8e67cd27e4e1b97
     internalID: 0
     vertices: []
     indices: 
@@ -198,7 +176,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Asset 53 - 128p_0: 423067303
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
