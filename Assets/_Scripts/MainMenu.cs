@@ -3,6 +3,11 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    [SerializeField] GameObject SettingUI;
+
+    private void Start() {
+        SettingUI.SetActive(false);
+    }
     public void PlayBtn()
     {
         SceneManager.LoadScene(1);
@@ -11,5 +16,14 @@ public class MainMenu : MonoBehaviour
     public void QuitBtn()
     {
         Application.Quit();
+    }
+
+     public void ExitSetting()
+    {
+        SettingUI.SetActive(false);
+    }
+    public void SettingGame()
+    {
+        SettingUI.SetActive(true);
     }
 }

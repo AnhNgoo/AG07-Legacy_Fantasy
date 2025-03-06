@@ -15,7 +15,7 @@ using UnityEngine;
         [SerializeField] float attackRange = 10f;
         [SerializeField] float atk = 1f;
         [SerializeField] float retrieveRange = 2.5f;
-        [SerializeField] int attackDamage = 5;
+        [SerializeField] float attackDamage = 5;
 
         private Animator animator;
         private int currentHp;

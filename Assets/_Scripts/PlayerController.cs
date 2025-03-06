@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using UnityEngine.UI;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] float speedMove = 5f;
@@ -10,23 +10,29 @@ public class PlayerController : MonoBehaviour
     [SerializeField] LayerMask GroundLayer;
     [SerializeField] LayerMask EnemyLayer;
     [SerializeField] Transform GroundCheck;
-    [SerializeField] int maxHp = 100;
+    [SerializeField] float maxHp = 100f;
+    [SerializeField] Image hpBar;
+    [SerializeField] GameObject gameOver;
     
    
     private Rigidbody2D rb;
     private Animator animator;
+    private GameUI gameUI;
     private bool isGrounded;
-    private int currentHp;
+    private float currentHp;
      
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Awake() {
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        gameUI = GetComponent<GameUI>();
     }
     void Start()
     {
+        Time.timeScale = 1;
         currentHp = maxHp;
+        gameOver.SetActive(false);
     }
 
     // Update is called once per frame
@@ -36,8 +42,13 @@ public class PlayerController : MonoBehaviour
         HandleJump();
         HandleAtk();
         UpdateAnimation();
+        CheckDie();
     }
 
+    public void CheckDie()
+    {
+        if (currentHp <= 0) Die();
+    }
     public void HandleMovement()
     {
 
@@ -89,11 +100,9 @@ public class PlayerController : MonoBehaviour
         animator.SetBool("Jumping", isJump);
     }
 
-    public void TakeDamage(int damage) {
+    public void TakeDamage(float damage) {
             currentHp -= damage;
-            if (currentHp <= 0) {
-                Die();
-            }
+            hpBar.fillAmount = currentHp/100f;
        }
 
        public void Die()
@@ -101,6 +110,7 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("isDead", true);
             Time.timeScale = 0;
             AudioManager.instance.StopBMGMusic();
+            gameOver.SetActive(true);
        }
 
     public void OnDrawGizmosSelected() {

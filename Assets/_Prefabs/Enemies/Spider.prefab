@@ -91,7 +91,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5310195234520588188}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -35.4, y: 3.63, z: 0.05935305}
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -229,8 +229,9 @@ MonoBehaviour:
   player: {fileID: 0}
   AtkPoint: {fileID: 8451597708217952285}
   attackRange: 5.78
-  atk: 0.63
-  retrieveRange: 1
+  atk: 0.5
+  retrieveRange: 0.45
+  attackDamage: 5
 --- !u!61 &804620942671737556
 BoxCollider2D:
   m_ObjectHideFlags: 0
